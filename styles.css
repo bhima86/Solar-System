@@ -1,0 +1,55 @@
+
+
+  .planet {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: orbit;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  #sun {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #mercury {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    animation-delay: 0s;
+    animation-duration: 120s;
+  }
+  
+  #venus {
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    animation-delay: 1s;
+    animation-duration: 180s;
+  }
+  
+  #earth {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    animation-delay: 2s;
+    animation-duration: 240s;
+  }
+  
+  @keyframes orbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+  }
